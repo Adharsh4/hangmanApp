@@ -29,6 +29,19 @@
     border: none;
 }
 
+
+@media only screen and (max-width:720px){
+    .buttons-container{
+        max-width: 90%;
+    }
+  }
+
+  
+@media only screen and (max-width:370px){
+    .buttons-container{
+        max-width: 95%;
+    }
+  }
 .styled-buttons:hover{
     transform: scale(1.08);
     transition: transform 0.1s ease-in-out;

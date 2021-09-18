@@ -21,7 +21,7 @@ const Hangman = ({ wrongCharacters }) => {
       <div className="missed-letters">
         <div>
           {errorLength > 0 &&
-            <p>Missed: <strong>{wrongCharacters
+            <p>Missed => <strong>{wrongCharacters
               .map((letter, i) => <span key={i}>{letter}</span>)
               .reduce((prev, curr) => prev === null ? [curr] : [prev, ', ', curr], null)}</strong></p>
           }

@@ -3,7 +3,6 @@ export function checkWin(correct, wrong, word) {
   let status = 'win';
   
   let splittedWord = word.toLowerCase().split(" ")
-  // console.log("aaa", correct, splittedWord)
   splittedWord.join("").split('').forEach(letter => {
     if(!correct.includes(letter)){
       status = '';

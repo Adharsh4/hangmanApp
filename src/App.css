@@ -4,7 +4,9 @@
 
 body, #root {
   background-color: #75d184;
-  color: #fff;
+  /* background-color: #a0a0a0; */
+  /* color: #fff; */
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -13,32 +15,127 @@ body, #root {
   margin: 0;
   overflow: hidden;
 }
-
+/* 
 #root{
   width: 80%;
-}
+} */
+
 
 h1 {
-  margin: 20px 0 0;
+  margin: 10px 0 0 0;
+}
+
+@media only screen and (max-width:625px){
+  
+  h1{
+    font-weight: bold;
+    font-size: 25px ;
+  }
+  h2{
+    font-weight: bold;
+    font-size: 20px ;
+  }
+}
+
+@media only screen and (max-width:490px){
+  
+  h1{
+    font-weight: bold;
+    font-size: 20px ;
+  }
+  h2{
+    font-weight: bold;
+    font-size: 15px ;
+  }
+}
+
+
+@media only screen and (max-width:390px){
+  
+  h1{
+    font-weight: bold;
+    font-size: 15px ;
+  }
+  h2{
+    font-weight: bold;
+    font-size: 15px ;
+  }
 }
 
 .hangman-container {
   padding: 0 30px;
   position: relative;
   margin: 10px auto;
-  height: 350px;
+  height: 100%;
   width: 60%;
 }
 
 
+@media only screen and (max-width:700px){
+  
+  .hangman-container {
+  }
+}
+
+@media only screen and (max-width:630px){
+  
+  .hangman-container {
+    /* display: flex; */
+    width: 80%;
+    margin: 0;
+  }
+}
+
+.seperator{
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+  border-top: 1px solid white;
+  width: 100%;
+}
+
+
+
+
 .notification {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 1);
   border-radius: 10px 10px 0 0;
   padding: 15px 20px;
   position: absolute;
   bottom: -50px;
   left: 70%;
+  color: white;
   transition: transform 0.3s ease-in-out;
+}
+@media only screen and (max-width:975px){
+  .notification {
+    width: 40%;
+    left: auto
+
+  }
+}
+
+@media only screen and (max-width:730px){
+  .notification {
+    width: 60%;
+
+  }
+}
+
+
+@media only screen and (max-width:490px){
+  .notification {
+    width: 80%;
+
+  }
+}
+
+
+@media only screen and (max-width:370px){
+  .notification {
+    width: 95%;
+
+  }
 }
 
 .notification p {

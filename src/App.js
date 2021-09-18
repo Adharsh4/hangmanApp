@@ -7,7 +7,6 @@ import Buttons from './components/Buttons';
 
 import {connect} from 'react-redux';
 import * as actions from './store/actions';
-import useDidMountEffect from './helpers/useDidMountEffect';
 
 const App = (props) => {
 
@@ -19,11 +18,9 @@ const App = (props) => {
 
   
   const handleKeydown = useCallback((event, letterClicked) => {
-    console.log("xxx", props.selectedWord)
     const key = event.key;
     const keyCode = event.which || event.keycode  // for mozilla and other browsers
-    console.log(key, keyCode, letterClicked)
-    if (canPlay && (keyCode >= 65 && keyCode <= 90) || letterClicked) { 
+    if (canPlay && ((keyCode >= 65 && keyCode <= 90) || letterClicked)) { 
       let letter;
       if(letterClicked){
         letter = letterClicked.toLowerCase();
@@ -64,10 +61,8 @@ const App = (props) => {
     timeOutId.current = setTimeout(() => {
       setShowNotification(false);
       clearTimeout(timeOutId.current)
-    }, 2000);
+    }, 1000);
   })
-
-  console.log("1", props)
 
   // correctCharacters, wrongCharacters, canPlay
 
@@ -87,6 +82,7 @@ const App = (props) => {
     <>
       <h1>Hangman - Find the hidden word</h1>
       <h2>Type/Click a letter to start</h2>
+      <hr className="seperator"/>
       <div className="hangman-container">
         <Hangman wrongCharacters={wrongCharacters} />   {/*  for body part and missded characters  */}
         <Word {...{   
@@ -95,6 +91,7 @@ const App = (props) => {
         }} />     {/*  To show Letters pressed  */}
         
       </div>
+      <hr  className="seperator"/>
       <Buttons handleButtonClicked={handleButtonClicked}/>
       <Backdrop {...{
         correctCharacters, 

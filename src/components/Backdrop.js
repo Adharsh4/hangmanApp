@@ -11,7 +11,7 @@ const Backdrop = ({correctCharacters, wrongCharacters, selectedWord, setCanPlay,
     successMessage = 'Congratulations! You won! 😃';
     playable = false;
   } else if( checkWin(correctCharacters, wrongCharacters, selectedWord) === 'lose' ) {
-    successMessage = 'Unfortunately you lost.';
+    successMessage = 'Oops, Please try again';
     showCorrectWord = `Correct word was: ${selectedWord.toUpperCase()}`;
     playable = false;
   }
