@@ -1,0 +1,3 @@
+export const SAVEDATA = "SAVEDATA"
+export const SET_ERROR_MESSAGE = "SET_ERROR_MESSAGE"
+export const SET_SELECTED_WORD = "SET_SELECTED_WORD"

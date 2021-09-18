@@ -1,0 +1,58 @@
+
+.human {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4px;
+    stroke-linecap: round;
+  }
+  
+/*   
+  .missed-letters {
+    position: absolute;
+    top: 35px;
+    right: 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 20px;
+    margin: 0 0 5px;
+  }
+   */
+  .missed-letters p {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+  }
+/* 
+  @media only screen and (max-width:870px){
+    .missed-letters {
+      position: relative;
+      top: 5px;
+      right: 100px;
+      display: flex;
+      font-size: 20px;
+      margin: 0 0 5px;
+    }
+  }
+  
+  @media only screen and (max-width:600px){
+    .custom-style{
+      left: 94%;
+    }
+  }
+  
+  @media only screen and (max-width:400px){
+    .custom-style{
+      left: 93%;
+    }
+  }
+  
+  @media only screen and (max-width:300px){
+    .custom-style{
+      left: 91%;
+    }
+  } */
+
+  .hangman-missed-letters-container{
+    display: flex;
+    justify-content: space-around
+  }

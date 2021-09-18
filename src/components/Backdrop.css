@@ -1,0 +1,45 @@
+
+.backdrop-div {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .backdrop-opener {
+    background:#75d184;
+    border-radius: 5px;
+    box-shadow: 10px 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .backdrop-opener button {
+    cursor: pointer;
+    background-color: #fff;
+    color: #2980b9;
+    border: 0;
+    margin-top: 20px;
+    padding: 12px 20px;
+    box-shadow: 6px 6px 6px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  .make-flex{
+    display: flex;
+  }
+  
+  .backdrop-opener button:hover {
+    transform: scale(1.08);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .backdrop-opener button:focus {
+    outline: 0;
+  }
+  
