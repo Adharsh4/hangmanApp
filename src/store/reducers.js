@@ -9,6 +9,7 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch(action.type){
         case actionTypes.SAVEDATA:
+            console.log(action.data);
             return{
                 ...state,
                 wordsArray: action.data
@@ -21,7 +22,7 @@ const reducer = (state = initialState, action) => {
         case actionTypes.SET_SELECTED_WORD:
             return{
                 ...state,
-                selectedWord: state.wordsArray[Math.floor(Math.random() * state.wordsArray.length)]
+                selectedWord: state.wordsArray[Math.floor(Math.random() * state.wordsArray.length)].toLowerCase()
                 // selectedWord: "sour cheRRY".toLowerCase()
                 
             };
