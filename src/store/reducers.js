@@ -9,7 +9,6 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch(action.type){
         case actionTypes.SAVEDATA:
-            console.log(action.data);
             return{
                 ...state,
                 wordsArray: action.data
