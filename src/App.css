@@ -102,8 +102,9 @@ h1 {
   border-radius: 10px 10px 0 0;
   padding: 15px 20px;
   position: absolute;
-  bottom: -50px;
-  left: 70%;
+  bottom: -300px;
+  left: auto;
+  /* display: none; */
   color: white;
   transition: transform 0.3s ease-in-out;
 }
@@ -143,5 +144,13 @@ h1 {
 }
 
 .notification.show {
-  transform: translateY(-50px);
+  /* display: inline-block; */
+  transform: translateY(-300px);
+}
+
+@media only screen and (max-width:490px){
+  .notification.show {
+    /* display: inline-block; */
+    transform: translateY(-300px);
+  }
 }
